@@ -1,0 +1,31 @@
+/* Import header and footer styles */
+@import url('header.css');
+@import url('footer.css');
+
+/* Dashboard CSS */
+.main-container {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    width: 200px;  /* Smaller width */
+    height: 200px; /* Set a matching height */
+    margin: 0 auto; /* Center the chart */
+}
+
+canvas {
+    max-width: 100%; /* Ensure the canvas scales within the container */
+    height: auto;    /* Maintain aspect ratio */
+}
+
+
+.details-container {
+    margin-top: 20px;
+    font-size: 18px;
+}

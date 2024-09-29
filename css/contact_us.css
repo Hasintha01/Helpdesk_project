@@ -1,0 +1,49 @@
+/* Import header and footer styles */
+@import url('header.css');
+@import url('footer.css');
+
+/* Contact Us Page Styles */
+main {
+    padding: 20px;
+    background-color: #FFFFFF; /* Light background color */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.topic {
+    text-align: center;
+    flex: 1;
+}
+
+.topic h3 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contact-text {
+    width: auto; 
+    text-align: center; 
+    font-family: 'Architects Daughter', cursive; 
+    font-size: 24px; 
+    line-height: 1.5; 
+    max-width: 600px; 
+    margin: 20px auto; 
+    color: #090e13; 
+}
+
+.map {
+    width: 37%;
+    margin-left: 100px;
+}
+
+/* End of Contact Us Page Styles */

@@ -1,0 +1,123 @@
+/* Import header and footer styles */
+@import url('header.css');
+@import url('footer.css');
+
+.main-container {
+    margin: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#searchTickets {
+    width: 200px; /* Adjusted width */
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-btn {
+    padding: 8px 12px;
+    background-color: #007BFF; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    opacity: 0.8;
+}
+
+.content {
+    display: flex; /* Use flexbox for layout */
+}
+
+.sidebar {
+    width: 30%; /* Sidebar width */
+    padding-right: 20px;
+}
+
+.ticket {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+.ticket:hover {
+    background-color: #e9ecef; /* Light gray on hover */
+}
+
+.ticket-detail {
+    flex-grow: 1; /* Take remaining space */
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.response-area {
+    margin-top: 20px;
+}
+
+.status-icons {
+    margin-top: 10px;
+}
+
+.status-icons button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.resolved-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.pending-btn {
+    background-color: #ffc107; /* Yellow */
+    color: black;
+}
+
+.rejected-btn {
+    background-color: #dc3545; /* Red */
+    color: white;
+}
+
+textarea {
+    width: 100%; /* Full width for the reply textarea */
+    height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.send-btn {
+    padding: 8px 12px;
+    margin-top: 10px;
+    background-color: #007BFF; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    opacity: 0.8;
+}

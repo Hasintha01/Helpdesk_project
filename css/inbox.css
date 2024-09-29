@@ -1,0 +1,120 @@
+/* Import header and footer styles */
+@import url('header.css');
+@import url('footer.css');
+
+/* Container for inbox layout */
+.main-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Left Sidebar */
+.sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    display: block;
+    padding: 10px;
+    background-color: #e1e1e1;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #d4d4d4;
+}
+
+/* Middle Email List */
+.email-list {
+    width: 30%;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+}
+
+#searchEmails {
+    width: 80%; /* Reduced width */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.email {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.email:hover {
+    background-color: #f1f1f1;
+}
+
+.email p {
+    margin: 5px 0;
+}
+
+.email-preview {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Right Email Details */
+.email-details {
+    width: 50%;
+    padding: 20px;
+}
+
+.email-details h2 {
+    margin-bottom: 20px;
+}
+
+#emailContent {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Reply Section */
+#replySection {
+    margin-top: 20px;
+}
+
+#replyMessage {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

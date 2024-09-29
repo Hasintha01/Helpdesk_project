@@ -1,0 +1,36 @@
+/*footer*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #dfccf6;
+    padding: 8px;
+    
+}
+
+.description{
+    float:left;
+    color:#090e13;
+    padding-left: 20px;
+}
+
+.footer-link{
+    float:right;
+    padding-right:50px;
+    font-family:  'Architects Daughter';
+    font-weight: bold;
+}
+
+.footer-link a{
+    text-decoration: none;
+    padding: 5px;
+    color:#090e13;
+    transition: all 0.3s ease;
+}
+
+.footer-link a:hover{
+    text-decoration: underline;
+}
+
+/* End of Footer */

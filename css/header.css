@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* header */
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #dfccf6;
+    border-bottom: 2px solid #ccc;
+    height: 80px; /* Set height to accommodate all elements */
+    position: relative;
+}
+
+/* Logo Styling */
+#logo {
+    border: 2px solid black;
+    padding:10px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 2%;
+    text-align: left;
+    
+}
+
+/* Heading Styling */
+#heading {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#profile-button {
+    position: absolute;
+    right: 2%;
+    transform: translateX(-50%);
+    top: 42%;
+    transform: translateY(-50%);
+}
+
+#profile-button button {
+    background: #fff; /* Background color of the button */
+    border: none;
+    border-radius: 25%; /* Circular button */
+    width: 42px; /* Width of the button */
+    height: 42px; /* Height of the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px; /* Size of the icon */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#profile-button button:hover {
+    background: #e0e0e0; /* Light background on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Navigation Styling */
+#navigation {
+    display: flex;
+    align-items: center;
+    font-family:  'Architects Daughter';
+    font-weight: bold;
+    position: absolute;
+    bottom: 5px; /* Moves navigation bar near the bottom of the header */
+    right: 20px; /* Aligns the navigation bar to the right */
+}
+
+/* Links and Search Bar in Navigation */
+#navigation a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+/* Animation on Hover */
+#navigation a:hover {
+    transform: translateY(-5px) scale(1.1);
+    color: #0a0d10;
+}
+
+/* Underline Effect */
+#navigation a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #090e13;
+    transition: width 0.3s ease;
+}
+
+#navigation a:hover::after {
+    width: 100%;
+}
+
+/* Search Bar Styling with Icon */
+#navigation .search_bar {
+    position: relative;
+}
+
+#navigation .search_bar ::placeholder{
+    font-size:14px;
+}
+
+#navigation input[type="search"] {
+    padding: 5px 30px 5px 10px;
+    font-size: 15px;
+    margin-bottom: 4px;
+    border: 1px solid #140f0f;
+    border-radius: 15px;
+}
+
+/* Search Icon Styling */
+#navigation .search_bar i {
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+/* End of Header */

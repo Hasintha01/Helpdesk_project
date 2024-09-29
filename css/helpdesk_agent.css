@@ -1,0 +1,183 @@
+/* Import header and footer styles */
+@import url('header.css');
+@import url('footer.css');
+
+/* Default font family */
+body {
+    font-family: Arial, sans-serif; /* Default font */
+}
+
+/* Main container layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    padding: 15px;
+    height: auto; /* Reduce height */
+    background-color: transparent; /* Transparent sidebar */
+    border-right: 1px solid #ddd; /* Add subtle border to the right */
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd; /* Add a line between topics */
+    padding-bottom: 10px;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #333; /* Keep the default color for text */
+    font-weight: bold;
+    font-size: 18px;
+    display: block;
+    padding: 5px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.sidebar nav ul li a:hover {
+    transform: scale(1.05); /* Slight enlarge on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent hover effect */
+    color: #333; /* Text color remains the same */
+    border-left: 2px solid #3498db; /* Add a blue line on the left when hovered */
+}
+
+
+/* Middle Section: Tickets */
+.ticket-section {
+    width: 55%;
+}
+
+/* Center and enlarge the Tickets topic */
+.top-section {
+    text-align: center; /* Center the content */
+    margin-bottom: 20px;
+}
+
+.top-section h1 {
+    font-size: 36px; /* Make the text bigger */
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+}
+
+
+.search-bar input[type="text"] {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Ticket list */
+.ticket-list {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enable scrolling if necessary */
+    max-height: 600px; /* Limit height to allow for scrolling */
+}
+
+.ticket-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 10px;
+    transition: transform 0.2s ease; /* Smooth transition for enlarging */
+}
+
+/* Expand Icon Style */
+.expand-icon {
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+/* Accept and Decline buttons */
+.accept-btn, .decline-btn {
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.accept-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.decline-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+/* Hover effects for buttons */
+.accept-btn:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+.decline-btn:hover {
+    background-color: #e53935; /* Darker red */
+}
+
+/* Notes Section */
+.notes-section {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 15px;
+}
+
+.notes-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.notes-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.notes-section ul li {
+    margin-bottom: 10px;
+}
+
+.notes-section {
+    padding: 15px; /* Add some padding */
+    background-color: #f9f9f9; /* Light background color for notepad */
+    border: 1px solid #ddd; /* Border around the notepad */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#notepad {
+    width: 100%; /* Full width */
+    height: 200px; /* Set a fixed height */
+    resize: none; /* Prevent resizing */
+    padding: 10px; /* Inner padding */
+    border: 1px solid #ccc; /* Border for the textarea */
+    border-radius: 5px; /* Rounded corners */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+#save-btn, #clear-btn {
+    margin-top: 10px; /* Space between buttons */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Round corners */
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+#save-btn:hover, #clear-btn:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
