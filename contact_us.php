@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="CSS/contact_us.css">
+    
+    <!-- Linking External Stylesheet for Contact Us Page -->
+    <link rel="stylesheet" type="text/css" href="css/contact_us.css">
+    
+    <!-- Title for the Page -->
     <title>Contact Us</title>
 </head>
 <body>
+    <!-- Including the Header Section -->
     <?php include 'header.php'; ?>
     
+    <!-- Main Content Section -->
     <main>
+        <!-- Page Title -->
         <h1 style="text-align: center; margin-top: 20px;">Contact Us</h1>
         
+        <!-- Contact Information Section -->
         <div class="contact-info">
+            <!-- Telephone Information -->
             <div class="topic">
-                <i class="fas fa-phone fa-2x"></i>
+                <i class="fas fa-phone fa-2x"></i> <!-- Font Awesome Icon -->
                 <h3>Telephone</h3>
                 <p>+94 123 456 789</p>
             </div>
+            <!-- Email Information -->
             <div class="topic">
-                <i class="fas fa-envelope fa-2x"></i>
+                <i class="fas fa-envelope fa-2x"></i> <!-- Font Awesome Icon -->
                 <h3>Email</h3>
                 <p>info@example.com</p>
             </div>
+            <!-- Location Information -->
             <div class="topic">
-                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <i class="fas fa-map-marker-alt fa-2x"></i> <!-- Font Awesome Icon -->
                 <h3>Location</h3>
                 <p>123 Help Desk St, Colombo, Sri Lanka</p>
             </div>
         </div>
         
+        <!-- Contact Section with Text and Map -->
         <div class="contact-section">
+            <!-- Contact Text for Inquiries -->
             <div class="contact-text">
                 <p>For any inquiries, please feel free to reach out to us through the provided contact methods. We are here to assist you!</p>
             </div>
+            <!-- Embedding Google Maps for Location -->
             <div class="map">
                 <h2>Live Map</h2>
                 <iframe
@@ -43,6 +58,7 @@
         </div>
     </main>
 
+    <!-- Including the Footer Section -->
     <?php include 'footer.php'; ?>
 </body>
 </html>

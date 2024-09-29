@@ -14,14 +14,14 @@ h1 {
 }
 
 .chart-container {
-    width: 200px;  /* Smaller width */
-    height: 200px; /* Set a matching height */
+    width: 200px;  
+    height: 200px; 
     margin: 0 auto; /* Center the chart */
 }
 
 canvas {
     max-width: 100%; /* Ensure the canvas scales within the container */
-    height: auto;    /* Maintain aspect ratio */
+    height: auto;    
 }
 
 

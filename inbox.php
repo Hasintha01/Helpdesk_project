@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/inbox.css">
+
+    <!-- Page Title -->
     <title>Inbox</title>
+
+    <!-- Linking External CSS for Inbox -->
+    <link rel="stylesheet" href="css/inbox.css">
 </head>
 <body>
 
+    <!-- Including the Header Section -->
     <?php include 'header.php'; ?>
 
+    <!-- Main Container -->
     <div class="main-container">
-        <!-- Left Sidebar -->
+        <!-- Left Sidebar for Navigation -->
         <div class="sidebar">
             <ul>
                 <li><a href="#">Inbox</a></li>
@@ -21,7 +28,7 @@
             </ul>
         </div>
 
-        <!-- Middle Email List -->
+        <!-- Middle Section for Email List -->
         <div class="email-list">
             <input type="text" id="searchEmails" placeholder="Search emails...">
 
@@ -37,10 +44,10 @@
                 <p class="email-preview">Here's the latest update on the project...</p>
             </div>
 
-            <!-- Add more emails -->
+            <!-- Add more emails here -->
         </div>
 
-        <!-- Right Email Details & Reply Section -->
+        <!-- Right Section for Email Details and Reply -->
         <div class="email-details" id="emailDetails">
             <h2>Select an email to view details</h2>
             <div id="emailContent"></div>
@@ -54,13 +61,16 @@
         </div>
     </div>
 
+    <!-- Including the Footer Section -->
     <?php include 'footer.php'; ?>
 
+    <!-- JavaScript Functions -->
     <script>
+        // Function to display email details
         function showEmailDetails(emailId) {
             let emailContent = '';
 
-            // Dummy content for each email
+            // Dummy content for email details
             if (emailId === 1) {
                 emailContent = `
                     <h2>Meeting tomorrow</h2>
@@ -83,6 +93,7 @@
             document.getElementById('replySection').style.display = 'block';
         }
 
+        // Function to handle sending replies
         function sendReply() {
             let replyMessage = document.getElementById('replyMessage').value;
             if (replyMessage) {

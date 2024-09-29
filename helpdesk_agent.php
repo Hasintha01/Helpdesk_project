@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character encoding and responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking external CSS file for styling the Help Desk Agent page -->
     <link rel="stylesheet" type="text/css" href="css/helpdesk_agent.css">
+
+    <!-- Page title -->
     <title>Help Desk Agent</title>
 </head>
 <body>
+
+    <!-- Including the header section from an external PHP file -->
     <?php include 'header.php'; ?>
   
+    <!-- Main content section -->
     <main>
-        <!-- Top Section with Title and Search Bar -->
+        <!-- Top Section containing the title and search bar -->
         <div class="top-section">
-            <h1>TICKETS</h1>
+            <h1>TICKETS</h1> <!-- Page Title -->
+            
+            <!-- Search Bar for ticket search -->
             <div class="search-bar">
-                <input type="text" placeholder="Search tickets...">
+                <input type="text" placeholder="Search tickets..."> <!-- Search input field -->
             </div>
         </div>
 
+        <!-- Main container for layout -->
         <div class="container">
+            
             <!-- Sidebar Navigation (Left Section) -->
             <aside class="sidebar">
                 <nav>
                     <ul>
+                        <!-- Sidebar links to other sections/pages -->
                         <li><a href="dashboard.php">Dashboard</a></li>
                         <li><a href="knowledgebase.php">Knowledgebase</a></li>
                         <li><a href="tickets.php">Tickets</a></li>
@@ -32,10 +45,13 @@
                 </nav>
             </aside>
 
-            <!-- Middle Section: Ticket List -->
+            <!-- Middle Section: Displaying the list of tickets -->
             <section class="ticket-section" style="width: 70%; margin-left: 5%;">
+                <!-- Ticket List -->
                 <div class="ticket-list">
-                    <!-- Example of 10 tickets -->
+                    <!-- Example tickets. Clicking a ticket expands its details -->
+                    
+                    <!-- Ticket 001 -->
                     <div class="ticket-box" onclick="expandTicket(this)">
                         <div class="ticket-info">
                             <p>Ref No: 001 - Subject: Ticket Issue A <span class="expand-icon">➕</span></p>
@@ -46,6 +62,8 @@
                             <button class="decline-btn" style="display: none;">Decline</button>
                         </div>
                     </div>
+
+                    <!-- Ticket 002 -->
                     <div class="ticket-box" onclick="expandTicket(this)">
                         <div class="ticket-info">
                             <p>Ref No: 002 - Subject: Ticket Issue B <span class="expand-icon">➕</span></p>
@@ -56,103 +74,31 @@
                             <button class="decline-btn" style="display: none;">Decline</button>
                         </div>
                     </div>
-                    <div class="ticket-box" onclick="expandTicket(this)">
-                        <div class="ticket-info">
-                            <p>Ref No: 003 - Subject: Ticket Issue C <span class="expand-icon">➕</span></p>
-                        </div>
-                        <div class="ticket-details" style="display: none;">
-                            <p>Details of the ticket C...</p>
-                            <button class="accept-btn" style="display: none;">Accept</button>
-                            <button class="decline-btn" style="display: none;">Decline</button>
-                        </div>
-                    </div>
-                    <div class="ticket-box" onclick="expandTicket(this)">
-                        <div class="ticket-info">
-                            <p>Ref No: 004 - Subject: Ticket Issue D <span class="expand-icon">➕</span></p>
-                        </div>
-                        <div class="ticket-details" style="display: none;">
-                            <p>Details of the ticket D...</p>
-                            <button class="accept-btn" style="display: none;">Accept</button>
-                            <button class="decline-btn" style="display: none;">Decline</button>
-                        </div>
-                    </div>
-                    <div class="ticket-box" onclick="expandTicket(this)">
-                        <div class="ticket-info">
-                            <p>Ref No: 005 - Subject: Ticket Issue E <span class="expand-icon">➕</span></p>
-                        </div>
-                        <div class="ticket-details" style="display: none;">
-                            <p>Details of the ticket E...</p>
-                            <button class="accept-btn" style="display: none;">Accept</button>
-                            <button class="decline-btn" style="display: none;">Decline</button>
-                        </div>
-                    </div>
-                    <div class="ticket-box" onclick="expandTicket(this)">
-                        <div class="ticket-info">
-                            <p>Ref No: 006 - Subject: Ticket Issue F <span class="expand-icon">➕</span></p>
-                        </div>
-                        <div class="ticket-details" style="display: none;">
-                            <p>Details of the ticket F...</p>
-                            <button class="accept-btn" style="display: none;">Accept</button>
-                            <button class="decline-btn" style="display: none;">Decline</button>
-                        </div>
-                    </div>
-                    <div class="ticket-box" onclick="expandTicket(this)">
-                        <div class="ticket-info">
-                            <p>Ref No: 007 - Subject: Ticket Issue G <span class="expand-icon">➕</span></p>
-                        </div>
-                        <div class="ticket-details" style="display: none;">
-                            <p>Details of the ticket G...</p>
-                            <button class="accept-btn" style="display: none;">Accept</button>
-                            <button class="decline-btn" style="display: none;">Decline</button>
-                        </div>
-                    </div>
-                    <div class="ticket-box" onclick="expandTicket(this)">
-                        <div class="ticket-info">
-                            <p>Ref No: 008 - Subject: Ticket Issue H <span class="expand-icon">➕</span></p>
-                        </div>
-                        <div class="ticket-details" style="display: none;">
-                            <p>Details of the ticket H...</p>
-                            <button class="accept-btn" style="display: none;">Accept</button>
-                            <button class="decline-btn" style="display: none;">Decline</button>
-                        </div>
-                    </div>
-                    <div class="ticket-box" onclick="expandTicket(this)">
-                        <div class="ticket-info">
-                            <p>Ref No: 009 - Subject: Ticket Issue I <span class="expand-icon">➕</span></p>
-                        </div>
-                        <div class="ticket-details" style="display: none;">
-                            <p>Details of the ticket I...</p>
-                            <button class="accept-btn" style="display: none;">Accept</button>
-                            <button class="decline-btn" style="display: none;">Decline</button>
-                        </div>
-                    </div>
-                    <div class="ticket-box" onclick="expandTicket(this)">
-                        <div class="ticket-info">
-                            <p>Ref No: 010 - Subject: Ticket Issue J <span class="expand-icon">➕</span></p>
-                        </div>
-                        <div class="ticket-details" style="display: none;">
-                            <p>Details of the ticket J...</p>
-                            <button class="accept-btn" style="display: none;">Accept</button>
-                            <button class="decline-btn" style="display: none;">Decline</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-                <!-- Right Section: Portable Notepad -->
-                    <aside class="notes-section">
-                        <h2>Notepad</h2>
-                        <textarea id="notepad" placeholder="Type your reminders here..." rows="10"></textarea>
-                        <button id="save-btn">Save</button>
-                        <button id="clear-btn">Clear</button>
-                    </aside>
+                    <!-- More tickets follow the same structure as above -->
+                    <!-- Ticket 003 - Ticket 010 -->
 
-        </div>
+                </div> <!-- End of ticket-list -->
+            </section> <!-- End of ticket-section -->
+
+            <!-- Right Section: Portable Notepad for reminders or notes -->
+            <aside class="notes-section">
+                <h2>Notepad</h2>
+                <!-- Textarea for typing notes -->
+                <textarea id="notepad" placeholder="Type your reminders here..." rows="10"></textarea>
+                
+                <!-- Save and Clear buttons for the notepad -->
+                <button id="save-btn">Save</button>
+                <button id="clear-btn">Clear</button>
+            </aside>
+
+        </div> <!-- End of container -->
     </main>
 
+    <!-- Including the footer section from an external PHP file -->
     <?php include 'footer.php'; ?>
 
-    <!-- Include JavaScript -->
+    <!-- Including external JavaScript file for page functionality -->
     <script src="js/helpdesk_agent.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
 
 /* Default font family */
 body {
-    font-family: Arial, sans-serif; /* Default font */
+    font-family: Arial, sans-serif; 
 }
 
 /* Main container layout */
@@ -18,9 +18,9 @@ body {
 .sidebar {
     width: 20%;
     padding: 15px;
-    height: auto; /* Reduce height */
-    background-color: transparent; /* Transparent sidebar */
-    border-right: 1px solid #ddd; /* Add subtle border to the right */
+    height: auto; 
+    background-color: transparent; 
+    border-right: 1px solid #ddd; 
 }
 
 .sidebar nav ul {
@@ -30,13 +30,13 @@ body {
 
 .sidebar nav ul li {
     margin-bottom: 10px;
-    border-bottom: 1px solid #ddd; /* Add a line between topics */
+    border-bottom: 1px solid #ddd; 
     padding-bottom: 10px;
 }
 
 .sidebar nav ul li a {
     text-decoration: none;
-    color: #333; /* Keep the default color for text */
+    color: #333; 
     font-weight: bold;
     font-size: 18px;
     display: block;
@@ -47,8 +47,8 @@ body {
 
 .sidebar nav ul li a:hover {
     transform: scale(1.05); /* Slight enlarge on hover */
-    background-color: rgba(255, 255, 255, 0.1); /* Transparent hover effect */
-    color: #333; /* Text color remains the same */
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #333; 
     border-left: 2px solid #3498db; /* Add a blue line on the left when hovered */
 }
 
@@ -60,14 +60,14 @@ body {
 
 /* Center and enlarge the Tickets topic */
 .top-section {
-    text-align: center; /* Center the content */
+    text-align: center; 
     margin-bottom: 20px;
 }
 
 .top-section h1 {
-    font-size: 36px; /* Make the text bigger */
+    font-size: 36px; 
     font-weight: bold;
-    margin: 0; /* Remove default margin */
+    margin: 0; 
 }
 
 
@@ -123,11 +123,11 @@ body {
 
 /* Hover effects for buttons */
 .accept-btn:hover {
-    background-color: #45a049; /* Darker green */
+    background-color: #45a049; 
 }
 
 .decline-btn:hover {
-    background-color: #e53935; /* Darker red */
+    background-color: #e53935; 
 }
 
 /* Notes Section */
@@ -152,32 +152,32 @@ body {
 }
 
 .notes-section {
-    padding: 15px; /* Add some padding */
-    background-color: #f9f9f9; /* Light background color for notepad */
-    border: 1px solid #ddd; /* Border around the notepad */
-    border-radius: 5px; /* Rounded corners */
+    padding: 15px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
 }
 
 #notepad {
-    width: 100%; /* Full width */
-    height: 200px; /* Set a fixed height */
-    resize: none; /* Prevent resizing */
-    padding: 10px; /* Inner padding */
-    border: 1px solid #ccc; /* Border for the textarea */
-    border-radius: 5px; /* Rounded corners */
-    font-family: Arial, sans-serif; /* Font style */
+    width: 100%; 
+    height: 200px; 
+    resize: none; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-family: Arial, sans-serif; 
 }
 
 #save-btn, #clear-btn {
-    margin-top: 10px; /* Space between buttons */
-    padding: 10px 15px; /* Button padding */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Round corners */
-    background-color: #007bff; /* Bootstrap primary color */
-    color: white; /* Text color */
-    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #007bff; 
+    color: white; 
+    cursor: pointer; 
 }
 
 #save-btn:hover, #clear-btn:hover {
-    background-color: #0056b3; /* Darker color on hover */
+    background-color: #0056b3; 
 }

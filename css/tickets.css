@@ -27,7 +27,7 @@ h1 {
 
 .search-btn {
     padding: 8px 12px;
-    background-color: #007BFF; /* Blue */
+    background-color: #007BFF; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -53,11 +53,11 @@ h1 {
     margin-bottom: 15px;
     border-radius: 5px;
     background-color: #f9f9f9;
-    cursor: pointer; /* Change cursor to pointer for better UX */
+    cursor: pointer; 
 }
 
 .ticket:hover {
-    background-color: #e9ecef; /* Light gray on hover */
+    background-color: #e9ecef; 
 }
 
 .ticket-detail {
@@ -85,17 +85,17 @@ h1 {
 }
 
 .resolved-btn {
-    background-color: #28a745; /* Green */
+    background-color: #28a745; 
     color: white;
 }
 
 .pending-btn {
-    background-color: #ffc107; /* Yellow */
+    background-color: #ffc107; 
     color: black;
 }
 
 .rejected-btn {
-    background-color: #dc3545; /* Red */
+    background-color: #dc3545; 
     color: white;
 }
 
@@ -111,7 +111,7 @@ textarea {
 .send-btn {
     padding: 8px 12px;
     margin-top: 10px;
-    background-color: #007BFF; /* Blue */
+    background-color: #007BFF; 
     color: white;
     border: none;
     border-radius: 5px;
