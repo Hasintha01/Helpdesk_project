@@ -22,21 +22,21 @@
         
         <!-- Contact Information Section -->
         <div class="contact-info">
-            <!-- Telephone Information -->
+            
             <div class="topic">
-                <i class="fas fa-phone fa-2x"></i> <!-- Font Awesome Icon -->
+                <i class="fas fa-phone fa-2x"></i> 
                 <h3>Telephone</h3>
                 <p>+94 123 456 789</p>
             </div>
-            <!-- Email Information -->
+            
             <div class="topic">
-                <i class="fas fa-envelope fa-2x"></i> <!-- Font Awesome Icon -->
+                <i class="fas fa-envelope fa-2x"></i> 
                 <h3>Email</h3>
                 <p>info@example.com</p>
             </div>
-            <!-- Location Information -->
+            
             <div class="topic">
-                <i class="fas fa-map-marker-alt fa-2x"></i> <!-- Font Awesome Icon -->
+                <i class="fas fa-map-marker-alt fa-2x"></i> 
                 <h3>Location</h3>
                 <p>123 Help Desk St, Colombo, Sri Lanka</p>
             </div>
@@ -44,11 +44,11 @@
         
         <!-- Contact Section with Text and Map -->
         <div class="contact-section">
-            <!-- Contact Text for Inquiries -->
+            
             <div class="contact-text">
                 <p>For any inquiries, please feel free to reach out to us through the provided contact methods. We are here to assist you!</p>
             </div>
-            <!-- Embedding Google Maps for Location -->
+            <!-- Google Maps for Location -->
             <div class="map">
                 <h2>Live Map</h2>
                 <iframe

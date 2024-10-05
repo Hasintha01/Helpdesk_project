@@ -42,7 +42,7 @@
 
     <!-- Script for Pie Chart -->
     <script>
-        // Ticket Data (could be pulled from your database)
+        // Ticket Data 
         const ticketData = {
             total: 100,
             resolved: 60,

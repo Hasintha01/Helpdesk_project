@@ -2,122 +2,161 @@
 @import url('header.css');
 @import url('footer.css');
 
-.main-container {
-    margin: 20px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+h3, h4 {
+    color: #333;
 }
 
-.search-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-#searchTickets {
-    width: 200px; /* Adjusted width */
-    padding: 8px;
-    margin-right: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.search-btn {
-    padding: 8px 12px;
-    background-color: #007BFF; 
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.search-btn:hover {
-    opacity: 0.8;
-}
-
-.content {
-    display: flex; /* Use flexbox for layout */
-}
-
-.sidebar {
-    width: 30%; /* Sidebar width */
-    padding-right: 20px;
-}
-
-.ticket {
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+#ticket-list {
     background-color: #f9f9f9;
-    cursor: pointer; 
-}
-
-.ticket:hover {
-    background-color: #e9ecef; 
-}
-
-.ticket-detail {
-    flex-grow: 1; /* Take remaining space */
-    border: 1px solid #ccc;
     padding: 15px;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+    height: 100vh;
+    overflow-y: auto;
 }
 
-.response-area {
-    margin-top: 20px;
+#ticket-list ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.status-icons {
-    margin-top: 10px;
+#ticket-list ul li {
+    margin: 10px 0;
 }
 
-.status-icons button {
-    padding: 8px 12px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+#ticket-list ul li a {
+    text-decoration: none;
+    color: #007bff;
 }
 
-.resolved-btn {
-    background-color: #28a745; 
-    color: white;
+#ticket-list ul li a:hover {
+    text-decoration: underline;
 }
 
-.pending-btn {
-    background-color: #ffc107; 
-    color: black;
-}
-
-.rejected-btn {
-    background-color: #dc3545; 
-    color: white;
+#ticket-details {
+    padding: 20px;
+    width: 70%;
 }
 
 textarea {
-    width: 100%; /* Full width for the reply textarea */
+    width: 100%;
     height: 100px;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
 }
 
-.send-btn {
-    padding: 8px 12px;
-    margin-top: 10px;
-    background-color: #007BFF; 
+input[type="submit"], .btn-submit {
+    background-color: #28a745; 
     color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; 
+    transition: background-color 0.3s, transform 0.2s; 
+    font-size: 16px; 
+}
+
+input[type="submit"]:hover, .btn-submit:hover {
+    background-color: #218838; 
+    transform: scale(1.05); 
+}
+
+.btn-helpdesk {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.btn-helpdesk button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s; 
 }
 
-.send-btn:hover {
-    opacity: 0.8;
+.btn-helpdesk button:hover {
+    background-color: #0056b3; 
+}
+
+.btn-edit, .btn-delete {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.btn-edit {
+    color: black; 
+    background-color: yellow; 
+    border: 1px solid yellow; 
+}
+
+.btn-edit:hover {
+    background-color: gold; 
+    transform: scale(1.05); 
+}
+
+.btn-delete {
+    color: white; 
+    background-color: red; 
+    border: 1px solid red; 
+}
+
+.btn-delete:hover {
+    background-color: darkred; 
+    transform: scale(1.05); 
+}
+
+.ticket-box {
+    background-color: #f0f8ff; 
+    border: 1px solid #007bff; 
+    border-radius: 5px; 
+    padding: 10px;
+    margin-bottom: 10px; 
+    transition: box-shadow 0.3s; 
+}
+
+.ticket-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.response-box {
+    background-color: #000; 
+    color: white; 
+    border: 1px solid #333; 
+    border-radius: 5px; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px; 
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.search-bar button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.search-bar button i {
+    font-size: 18px;
+    color: #007bff; 
 }

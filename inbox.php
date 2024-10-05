@@ -44,7 +44,7 @@
                 <p class="email-preview">Here's the latest update on the project...</p>
             </div>
 
-            <!-- Add more emails here -->
+            <!-- We can add more emails using same format -->
         </div>
 
         <!-- Right Section for Email Details and Reply -->

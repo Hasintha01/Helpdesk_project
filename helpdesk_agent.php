@@ -75,11 +75,11 @@
                         </div>
                     </div>
 
-                    <!-- More tickets follow the same structure as above -->
-                    <!-- Ticket 003 - Ticket 010 -->
+                    <!-- We can add more tickets using same format -->
+                    
 
-                </div> <!-- End of ticket-list -->
-            </section> <!-- End of ticket-section -->
+                </div> 
+            </section> 
 
             <!-- Right Section: Portable Notepad for reminders or notes -->
             <aside class="notes-section">
