@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding-top: 130px;
+    font-size: 17px;
+}
+/* header */
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #48cae4;
+    border-bottom: 2px solid #ccc;
+    height: 80px; /* Set height to accommodate all elements */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the header spans the full width */
+    z-index: 1000;
+}
+
+/* Logo Styling */
+#logo {
+    text-align: left;
+}
+
+#logo img{
+    width: 55%;
+    height:39%;
+}
+
+/* Heading Styling */
+#heading {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    top: 50%; /* Aligning based on height */
+    transform: translate(-50%, -50%);
+}
+
+#profile-button {
+    position: absolute;
+    right: 4%;
+    top: 35%;
+    transform: translateY(-50%);
+}
+
+#profile-button .icon {
+    background: #fff; /* Background color of the button */
+    border: none;
+    border-radius: 25%; /* Circular button */
+    width: 42px; /* Width of the button */
+    height: 42px; /* Height of the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px; /* Size of the icon */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#profile-button .icon:hover {
+    background: #e0e0e0; /* Light background on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.menu{
+    position: absolute;
+    right: 8%;
+    top: 13%;
+    background-color: #06adce;;
+    border-radius: 7px;
+    max-height:0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.menu.open-menu{
+    max-height:100px;
+}
+
+.menu hr{
+    margin:1px;
+    color: black;
+}
+
+.menu a{
+    display:block;
+    text-decoration: none;
+    color:black;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.menu a:hover{
+    background: #e0e0e0;
+}
+
+/* Navigation Styling */
+#navigation {
+    display: flex;
+    align-items: center;
+    font-family:  'Architects Daughter';
+    font-weight: bold;
+    position: absolute;
+    bottom: 5px; /* Moves navigation bar near the bottom of the header */
+    right: 20px; /* Aligns the navigation bar to the right */
+}
+
+/* Links and Search Bar in Navigation */
+#navigation a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+/* Animation on Hover */
+#navigation a:hover {
+    transform: translateY(-5px) scale(1.1);
+    color: #0a0d10;
+}
+
+/* Underline Effect */
+#navigation a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #090e13;
+    transition: width 0.3s ease;
+}
+
+#navigation a:hover::after {
+    width: 100%;
+}
+
+/* Search Bar Styling with Icon */
+#navigation .search_bar {
+    position: relative;
+}
+
+#navigation .search_bar ::placeholder{
+    font-size:14px;
+    font-family: 'Architects Daughter' ;
+}
+
+#navigation input[type="search"] {
+    padding: 5px 30px 5px 10px;
+    font-size: 15px;
+    margin-bottom: 4px;
+    margin-right: 23px;
+    border: 1px solid #140f0f;
+    border-radius: 15px;
+}
+
+/* Search Icon Styling */
+#navigation .search_bar i {
+    position: absolute;
+    right: 32px;
+    top: 45%;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+/* End of Header */

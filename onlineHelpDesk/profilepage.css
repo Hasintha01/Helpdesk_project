@@ -1,0 +1,89 @@
+
+
+/*begining of the content*/
+.picture i{
+    text-align: center;
+    font-size: 25px;
+}
+
+h2{
+    padding-left:25px;
+}
+
+.profile-container{
+    width:90%;
+    height: 820px;
+    background-color: #e0e0e0;
+    display:flex;
+    margin:10px auto;
+}
+
+.picture{
+    width:32%;
+    height:350px;
+    background-color: whitesmoke;
+    border:2px solid black;
+    margin:30px auto;
+    border-radius: 7px;
+}
+
+.pic-details{
+    width:57%;
+    height:750px;
+    background-color: whitesmoke;
+    margin:10px auto;
+    border-radius: 7px;
+}
+
+.profile-form{
+    display:flex;
+    flex-direction: column;
+}
+
+.profile-form label{
+    margin:10px 12px 5px;
+    font-weight: bold;
+}
+
+.profile-form input{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.button{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.profile-form input[type='submit']
+{
+    width:15%;
+    height: 35px;
+    border-radius: 7px;
+    padding: 7px 5px;
+    cursor: pointer;
+}
+
+#deleteForm {
+    margin-top: 10px;
+}
+
+#deleteForm button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    float: right;  /* Align button to the right */
+    border-radius: 7px;
+    transition: width 0.3s ease;
+}
+
+#deleteForm button:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,264 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 130px;
+    font-size: 17px;
+}
+/* header */
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #48cae4;
+    border-bottom: 2px solid #ccc;
+    height: 80px; /* Set height to accommodate all elements */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the header spans the full width */
+    z-index: 1000;
+}
+
+/* Logo Styling */
+#logo {
+    text-align: left;
+}
+
+#logo img{
+    width: 55%;
+    height:39%;
+}
+
+/* Heading Styling */
+#heading {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    top: 50%; /* Aligning based on height */
+    transform: translate(-50%, -50%);
+}
+
+#profile-button {
+    position: absolute;
+    right: 4%;
+    top: 35%;
+    transform: translateY(-50%);
+}
+
+#profile-button .icon {
+    background: #fff; /* Background color of the button */
+    border: none;
+    border-radius: 25%; /* Circular button */
+    width: 42px; /* Width of the button */
+    height: 42px; /* Height of the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px; /* Size of the icon */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#profile-button .icon:hover {
+    background: #e0e0e0; /* Light background on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.menu{
+    position: absolute;
+    right: 8%;
+    top: 13%;
+    background-color: #06adcf;
+    border-radius: 7px;
+    max-height:0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.menu.open-menu{
+    max-height:100px;
+}
+
+.menu hr{
+    margin:1px;
+    color: black;
+}
+
+.menu a{
+    display:block;
+    text-decoration: none;
+    color:black;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.menu a:hover{
+    background: white;
+}
+
+/* Navigation Styling */
+#navigation {
+    display: flex;
+    align-items: center;
+    font-family:  'Architects Daughter';
+    font-weight: bold;
+    position: absolute;
+    bottom: 5px; /* Moves navigation bar near the bottom of the header */
+    right: 20px; /* Aligns the navigation bar to the right */
+}
+
+/* Links and Search Bar in Navigation */
+#navigation a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+/* Animation on Hover */
+#navigation a:hover {
+    transform: translateY(-5px) scale(1.1);
+    color: #0a0d10;
+}
+
+/* Underline Effect */
+#navigation a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #090e13;
+    transition: width 0.3s ease;
+}
+
+#navigation a:hover::after {
+    width: 100%;
+}
+
+/* Search Bar Styling with Icon */
+#navigation .search_bar {
+    position: relative;
+}
+
+#navigation .search_bar ::placeholder{
+    font-size:14px;
+    font-family: 'Architects Daughter' ;
+}
+
+#navigation input[type="search"] {
+    padding: 5px 30px 5px 10px;
+    font-size: 15px;
+    margin-bottom: 4px;
+    margin-right: 23px;
+    border: 1px solid #140f0f;
+    border-radius: 15px;
+}
+
+/* Search Icon Styling */
+#navigation .search_bar i {
+    position: absolute;
+    right: 32px;
+    top: 45%;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+/* End of Header */
+
+/*content of the body*/
+
+.bigcontainer{
+    flex: 1;
+    width:87%;
+    margin:20px auto;
+    padding: 15px;
+}
+
+.boxs{
+    padding:12px;
+    margin: 20px 15px;
+    background-color:whitesmoke;
+    border:2px solid black;
+    border-radius: 17px;
+    box-shadow: 4px 4px 4px 4px rgb(168, 148, 148);
+
+}
+
+.tid{
+    margin-right:30px;
+}
+
+button{
+    float: right;
+    border-radius: 5px;
+    cursor: pointer;
+    width:65px;
+    margin-right:5px;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+button a{
+    color:white;
+    text-decoration: none;
+}
+
+.content p{
+    padding:5px 10px 5px 27px;
+}
+
+/*end of content*/
+
+/*footer*/
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #48cae4;
+    padding-top: 5px;
+    padding-bottom:4px;
+}
+
+.description{
+    float:left;
+    color:#090e13;
+    padding-left: 20px;
+}
+
+.footer-link{
+    float:right;
+    padding-right:50px;
+    font-family:  'Architects Daughter';
+    font-weight: bold;
+}
+
+.footer-link a{
+    text-decoration: none;
+    padding: 5px;
+    color:#090e13;
+    transition: all 0.3s ease;
+}
+
+.footer-link a:hover{
+    text-decoration: underline;
+}
+
+/* End of Footer */

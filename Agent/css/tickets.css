@@ -1,0 +1,212 @@
+/* Import header and footer styles */
+@import url('header.css');
+@import url('footer.css');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h3, h4 {
+    color: #333;
+}
+
+#ticket-list {
+    background-color: #f9f9f9;
+    padding: 15px;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#ticket-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#ticket-list ul li {
+    margin: 10px 0;
+}
+
+#ticket-list ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+#ticket-list ul li a:hover {
+    text-decoration: underline;
+}
+
+#ticket-details {
+    padding: 20px;
+    width: 70%;
+}
+
+textarea, input[type="text"] {
+    width: 100%;
+    padding: 10px; 
+    border: none; 
+    border-radius: 10px; 
+    background-color: #f7f7f7; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+}
+
+/* Hover effect */
+textarea:hover, input[type="text"]:hover {
+    background-color: #e0e0e0; 
+}
+
+/* Focus effect */
+textarea:focus, input[type="text"]:focus {
+    outline: none; 
+    background-color: #fff; 
+    box-shadow: 0 0 5px rgba(0, 122, 255, 0.5); 
+}
+
+/* Button Styles */
+input[type="submit"], .btn-submit {
+    background-color: #28a745; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px; 
+    transition: background-color 0.3s, transform 0.2s; 
+    font-size: 16px; 
+}
+
+input[type="submit"]:hover, .btn-submit:hover {
+    background-color: #218838; 
+    transform: scale(1.05); 
+}
+
+.btn-helpdesk {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.btn-helpdesk button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.btn-helpdesk button:hover {
+    background-color: #0056b3; 
+}
+
+.btn-edit, .btn-delete {
+    padding: 5px 10px;
+    border-radius: 10px; 
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.btn-edit {
+    color: black; 
+    background-color: yellow; 
+    border: 1px solid yellow; 
+}
+
+.btn-edit:hover {
+    background-color: gold; 
+    transform: scale(1.05); 
+}
+
+.btn-delete {
+    color: white; 
+    background-color: red; 
+    border: 1px solid red; 
+}
+
+.btn-delete:hover {
+    background-color: darkred; 
+    transform: scale(1.05); 
+}
+
+.ticket-box {
+    background-color: #f0f8ff; 
+    border: 1px solid #007bff; 
+    border-radius: 5px; 
+    padding: 10px;
+    margin-bottom: 10px; 
+    transition: box-shadow 0.3s; 
+}
+
+.ticket-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+.response-box {
+    display: flex; 
+    flex-direction: column; 
+    background-color: #ffffff; 
+    color: #333;
+    border: none; 
+    border-radius: 15px; 
+    padding: 20px; 
+    margin-bottom: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+textarea.response-text {
+    width: 100%;
+    height: 200px; 
+    padding: 15px; 
+    border: none; 
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+    resize: none; 
+    font-size: 16px; 
+    margin-top: 15px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+    transition: background-color 0.3s ease; 
+}
+
+.response-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start; 
+    gap: 10px;
+}
+
+.btn-edit, .btn-delete {
+    padding: 10px 20px; 
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 12px; 
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.btn-edit {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+}
+
+.btn-edit:hover {
+    background-color: #45a049;
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+}
+
+.btn-delete {
+    background-color: #f44336; 
+    color: white;
+    border: none;
+}
+
+.btn-delete:hover {
+    background-color: #e53935;
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+}

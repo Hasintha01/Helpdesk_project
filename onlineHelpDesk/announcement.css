@@ -1,0 +1,166 @@
+
+
+/* Start of content */
+
+.bigbox{
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    height:700px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.subbox1{
+    border-radius: 7px;
+    width:36%;
+    height: 670px;
+    margin:10px;
+    display: block;
+}
+
+.notificationbox{
+    width:90%;
+    height: 310px;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding:0px;
+    margin:20px auto;
+    overflow-y: scroll;
+    display: block;
+    box-shadow: 4px 4px 4px 4px rgb(168, 148, 148);
+
+}
+
+.topbar{
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Position it at the top of the container */
+ /* Optional: background color to cover content below */
+    z-index: 10;
+    background-color: rgb(238, 208, 208);
+}
+
+.notificationbox h4{
+    padding: 7px 0px 0px 10px;
+    margin: 0;
+}
+
+.notificationbox p{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 7px;
+    margin-left:15px;
+    margin-right: 5px;
+}
+
+.notificationbox::-webkit-scrollbar {
+    width: 10px;
+}
+
+.notificationbox::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 7px;
+}
+
+.notificationbox::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.notificationbox::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.notificationbox i{
+    float: right;
+    padding-right:17px;
+    padding-top: 4px;
+}
+
+.notificationbox p i{
+    float:left;
+}
+
+.eventsbox{
+    width:90%;
+    height: 310px;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding:0px;
+    margin:10px auto;
+    overflow:hidden;
+    box-shadow: 4px 4px 4px 4px rgb(168, 148, 148);
+
+}
+
+.upper{
+    background-color: rgb(238, 208, 208); 
+}
+
+.eventsbox h4{
+    padding: 7px 0px 0px 10px;
+    margin: 0px;
+}
+
+.eventsbox i{
+    float: right;
+    padding-right:15px;
+    padding-top: 4px;
+}
+
+.subbox2{
+    /* background-color: rgb(236, 241, 241); */
+    border: 2px solid black;
+    border-radius: 7px;
+    width: 60%;
+    height: 670px;
+    margin:10px;
+}
+
+.subbox2 h3{
+    padding-left:14px;
+}
+
+.Adescription{
+    width:94%;
+    height: 550px;
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 2px;
+    /* background-color: aliceblue; */
+    overflow: hidden;
+    box-shadow: 4px 4px 4px 4px rgb(168, 148, 148);
+
+}
+.Adescription i{
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    background-color: #d0cbcb;
+    margin-right: 10px;
+}
+
+.Adescription h4{
+    padding-left: 20px;
+}
+
+.Adescription p{
+    padding: 10px 15px 10px  50px;
+}
+
+.contentbox{
+    border: 2px solid black;
+    border-radius: 7px;
+    padding:10px;
+    margin: 7px;
+    overflow: hidden;
+    padding-left: 12px;
+    cursor: pointer;
+}
+.titlebox{
+    padding:10px;
+}
+
+/* End of content */
+

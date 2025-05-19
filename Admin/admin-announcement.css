@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    padding-top: 130px;
+    font-size: 17px;
+}
+/* stryling main box one  */
+.main-box-one{
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    height: 600px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10px;    
+    box-shadow: 4px 4px 4px 4px rgb(168, 148, 148);
+    z-index: 1;
+}
+
+/* add announcement button */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    z-index: 10;
+}
+
+.popup-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10001;
+}
+.popup-form label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.popup-form input{
+    width: 100%;
+    padding: 5px;
+}
+
+#announcementDesc{
+    height: 200px;
+    width: 100%;
+    resize: vertical;
+}
+
+.open-popup-btn {
+    margin: 20px;
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color:cornsilk;
+}
+
+#closeAnnouncementPopupBtn{
+    background-color: crimson;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 15%;
+}
+
+#closeAnnouncementPopupBtn:hover{
+    background-color: rgb(159, 14, 43);
+}
+
+#submitAnnouncementPopupBtn{
+    background-color: rgb(21, 208, 56);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 15%;
+}
+
+#submitAnnouncementPopupBtn:hover{
+    background-color: rgb(16, 149, 40);
+}
+
+.open-popup-btn i{
+    padding:10px 5px ;
+}
+
+.open-popup-btn:hover {
+    transform: scale(1.1); /* Enlarges the button */
+}
+
+/* end of the add announcement button  */
+
+.new-events{
+    display: block;
+    position: relative;
+    top: 20px;
+    right: -13px;
+    border: 2px solid black;
+    border-radius: 7px;
+    width: 400px;
+    height: 90%;
+    padding: 0px;
+    overflow-y: scroll;
+    /* background-color: honeydew; */
+}
+
+.topbar-one {
+    position: sticky;
+    width: 390px;
+    height: 40px;
+    top: 0;
+    padding: auto;
+    z-index: 1; /* Lower z-index to ensure overlay appears above */
+    background-color: #ccc;
+}
+
+.topbar-one h4 {
+    padding: 7px 0px 0px 10px;
+    margin: 0;
+    z-index: inherit;
+}
+
+.topbar-one h4 i{
+    float: right;
+    padding: 4px 17px 4px 4px;
+}
+
+.bottombar-one{
+    padding-right:10px;
+}
+
+.bottombar-one ol li{
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.new-events::-webkit-scrollbar {
+    width: 10px;
+}
+
+.new-events::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 7px;
+}
+
+.new-events::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.new-events::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* end of the main box one */
+
+/* styling main box two  */
+
+.main-box-two {
+    display: flex;
+    position: absolute;
+    bottom: -60px;
+    left: 500px;
+    justify-content: space-between;
+    width: 900px;
+    height: 600px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 4px rgb(168, 148, 148);
+    z-index: 1; /* Lower value than the overlay */
+}
+
+.least-announcement{
+    display: block;
+    position: relative;
+    top: 20px;
+    right: -20px;
+    border: 2px solid black;
+    border-radius: 7px;
+    width: 840px;
+    height: 90%;
+    padding: 0px;
+    overflow-y: scroll;
+    /* background-color: beige; */
+}
+
+.topbar-two{
+    position: sticky;
+    width: 830px;
+    height: 40px;
+    top: 0;
+    padding: auto;
+    z-index: 10;
+    background-color: #ccc;
+}
+
+.topbar-two h4{
+    padding: 7px 0px 0px 10px;
+    margin: 0;
+}
+
+.topbar-two h4 i{
+    float: right;
+    padding: 4px 17px 4px 4px;
+}
+.bottombar-two ul li{
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.least-announcement::-webkit-scrollbar {
+    width: 10px;
+}
+
+.least-announcement::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 7px;
+}
+
+.least-announcement::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.least-announcement::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* end of the main box two  */

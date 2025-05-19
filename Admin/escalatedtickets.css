@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding-top: 130px;
+    font-size: 17px;
+}
+
+/*Styling the body part*/
+
+/*Styling of the scroll box*/
+.main-box-one{
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    
+}
+
+.scroll-bar{
+    width: 400px;
+    max-height: 550px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 4px rgb(168, 148, 148);
+}
+
+.top-bar-one{
+    position: sticky;
+    width: 400px;
+    background-color:#ccc;
+    padding: 10px;
+    top: 0;
+    z-index: 1; /* Lower z-index to ensure overlay appears above */
+
+}
+
+.top-bar-one, h3{
+    text-align: left;
+}
+
+.latter-bar-one{    
+    padding: 8px;
+    height: 100%;
+    
+}
+
+/*Styling of the Add escalated ticket box*/
+
+.main-box-two{
+    position: absolute;
+    margin-top: -500px;
+    margin-left: 500px;
+}
+
+.add-escalated-ticket{
+    border: 2px solid black;
+    width: 800px;
+    height: 450px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 4px 4px rgb(168, 148, 148);
+}
+
+#ticketId, #agentId{
+    width: 80%;
+    padding: 5px;
+}
+#description{
+    width: 80%;
+    height: 200px;
+}
+.add-escalated-ticket, h3{
+    text-align: left;
+}
+
+.button-group{
+    text-align: right;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #3a3f44;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-group button:hover {
+    background-color: #282c31;
+}
+
+/*Ask it support button*/
+.it-support{
+    position: absolute;
+    margin-top: -580px;
+    margin-left: 1200px;
+    padding: 10px;
+}
+
+.it-support button{
+    color: white;
+    background-color:cadetblue;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.it-support button:hover{
+    background-color: rgb(52, 133, 136);
+}
+/*end of the body part*/

@@ -1,0 +1,283 @@
+.side-bar-area{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    background-color: #48cae4;
+    border: 2px solid black;
+    border-top-right-radius: 15px ;
+}
+
+.side-bar-heading{
+    padding:20px;
+    text-align: center;
+    margin: 0; 
+}
+
+#welcomeheader3{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 38px;
+    color: #ffffff;
+}
+
+.side-bar h2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 20px; 
+}
+.side-bar{
+    margin-top: 100px;
+}
+.side-bar a{
+    
+    padding: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    transition: transform 0.3s ease ;
+    color: black;
+    
+}
+
+.side-bar a:hover {
+    transform: scale(1.1);
+}
+/* top-ticket-solvers */
+/* Container for the top solvers table */
+.top-solvers-area {
+    margin: 20px 0 0 250px;
+}
+
+/* Table structure */
+.top-solvers {
+    border: 2px solid black; /* Table border */
+    border-collapse: collapse; /* Prevents double borders */
+    width: 100%; /* Make the table take full width of its container */
+    max-width: 400px; /* Set a max width for the table */
+}
+
+/* Table header and data cell styling */
+.top-solvers th, .top-solvers td {
+    border: 2px solid black; /* Cell borders */
+    padding: 8px; /* Padding for better readability */
+    text-align: left; /* Align text to the left */
+}
+
+/* Header background color */
+.top-solvers th {
+    background-color: #f4f4f4; /* Light background for header */
+}
+
+body{
+    padding: 50px;
+}
+
+/* active-solvers */
+.active-solvers-area {
+    margin: 40px 0px 0px 250px; /* Adds spacing between sections */
+}
+
+.active-solvers {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 400px;
+}
+
+.active-solvers th, .active-solvers td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.active-solvers th {
+    background-color: #f4f4f4;
+}
+
+/*ticket-By-Status*/
+/* Container for the ticket-by-status table */
+.ticket-by-status {
+    margin: -540px 0px 0px 700px; /* Center the table horizontally */
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 400px;
+    height: auto; /* Let the height adjust based on content */
+}
+
+/* Table header */
+.ticket-by-status th {
+    border: 2px solid black;
+    padding: 6px;
+    text-align: left;
+    background-color: #f4f4f4;
+}
+
+/* Bar graph container */
+.bar-graph {
+    width: 100%; /* Match the table width */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between bars */
+    padding: 10px;
+}
+
+/* Individual bars */
+.bar {
+    background-color: rgb(106, 227, 195); /* Default color for bars */
+    text-align: left;
+    color: black;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    height: 40px; /* Standardize bar height */
+    border-radius: 5px; /* Optional for rounded edges */
+}
+
+/* Widths of individual bars */
+.bar-1 {
+    width: 20%; /* Open tickets */
+}
+
+.bar-2 {
+    width: 50%; /* Pending tickets */
+}
+
+.bar-3 {
+    width: 40%; /* Resolved tickets */
+}
+
+.bar-4 {
+    width: 30%; /* Closed tickets */
+}
+
+/* email table */
+.emails {
+    margin: 50px 0px 0px 700px; /* Center the table with reduced top margin */
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 400px;
+    padding: 0;
+    position: relative; /* Keep relative positioning if needed */
+    left: 0;  /* Reset left positioning */
+    bottom: 0; /* Reset bottom positioning */
+}
+
+.emails th, .emails td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.emails th {
+    background-color: #f4f4f4;
+}
+
+.emails p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* note box */
+.note-box {
+    position: relative;
+    bottom: 250px;
+    left: 440px;
+    border: 2px solid black;
+    padding: 20px;
+    width:200px;
+    margin: 20px 0px 0px 700px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.note-box:hover {
+    transform: scale(1.1); /* Slightly increase the size */
+}
+
+.note-box h3 {
+    margin-top: 0;
+    color: black;
+}
+/* end of the note box */
+
+.admin-box {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f4f4f4;
+    
+    /* Position in the upper-right corner */
+    position: absolute;
+    top: 100px;  /* Adjust the top spacing */
+    right: 20px;  /* Adjust the right spacing */
+}
+
+.admin-icon {
+    font-size: 50px;
+}
+
+.admin-label {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.clock, .date {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+
+}
+
+.logout a{
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: crimson;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+/*footer*/
+
+/* Ensure the footer sticks to the bottom */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #48cae4;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    text-align: center;
+}
+
+
+.description{
+    float:left;
+    color:#090e13;
+    padding-left: 20px;
+}
+
+.footer-link{
+    float:right;
+    padding-right:50px;
+    font-family:  'Architects Daughter';
+    font-weight: bold;
+}
+
+.footer-link a{
+    text-decoration: none;
+    padding: 5px;
+    color:#090e13;
+    transition: all 0.3s ease;
+}
+
+.footer-link a:hover{
+    text-decoration: underline;
+}
+
+/* End of Footer */

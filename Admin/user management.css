@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding-top: 130px;
+    font-size: 17px;
+}
+/* Body Styling */
+
+/* Search Member Area */
+.search-member-area {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#search-member {
+    width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 4px rgb(168, 148, 148);
+}
+
+/* Popup Form */
+.popup-form {
+    display: none;
+    position: fixed;
+    border-radius: 7px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.popup-form, label{
+    text-align: left;
+}
+
+.popup-form, input{
+    justify-self: right;
+    width: 50%;
+}
+
+#id, #name, #email, #phone, #password{
+    width: 100%;
+}
+
+#submit, #closePopupBtn{
+    width: 20%;
+    padding: 7px;
+}
+
+#submit {
+    border-radius: 7px;
+    background-color: #28a745; /* A softer, modern green */
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#submit:hover {
+    background-color: #218838; /* Darker green for hover */
+}
+
+#closePopupBtn {
+    border-radius: 7px;
+    background-color: #dc3545; /* A modern red shade */
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#closePopupBtn:hover {
+    background-color: #c82333; /* Darker red for hover */
+}
+
+/* Background Overlay */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 500;
+}
+
+/* Buttons */
+.open-popup-btn {
+    margin: 20px 0 0 50px;
+    border-radius: 7px;
+    width: 150px;
+    height: 40px;
+    padding: 10px 20px;
+    background-color:cornsilk;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.3s ease;
+    margin-bottom: 25px;
+}
+
+.open-popup-btn:hover {
+    transform: scale(1.1);
+}
+
+.close-popup-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensure borders are not merged */
+    margin: 0px 17px 30px;
+    font-size: 16px;
+    text-align: left;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd; /* Add border to both table headers and data cells */
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #ddd; /* Optional: make header border thicker */
+    position: sticky;
+    top:0;
+    z-index: 10;
+}
+
+/* Table Wrapper for scroll  */
+.table-wrapper {
+    width: 100%; /* Full width */
+    max-height: 500px; /* Set max height for the scroll */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scrolling */
+    border: 2px solid #ddd; /* Optional border for visibility */
+}
+
+/* Optional: Customize scrollbar */
+.table-wrapper::-webkit-scrollbar {
+    width: 12px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+/* Buttons Inside Mainbox */
+#btn-1, #btn-2 {
+    border: none;
+    border-radius: 5px;
+    background-color: #86e0d3;
+    padding: 4px;
+    margin-right: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#btn-1:hover, #btn-2:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

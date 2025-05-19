@@ -1,0 +1,65 @@
+
+
+/* start of content */
+
+.searchbar{
+    width:100%;
+    height:120px;
+    margin-top: 10px;
+    display:flex;
+    justify-content: center;
+    font-family:  'Architects Daughter';
+}
+
+.searchbar input{
+    width:70%;
+    height: 50px;
+    border:2px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    margin:auto;
+    font-family:  'Architects Daughter';
+}
+
+.searchbar i{
+    position:absolute;
+   right:16.8%;
+   top:27.3%;
+   font-size: 20px;
+
+}
+
+.border{
+    width:90%;
+    padding:20px;
+    margin: 20px auto;
+    font-family:  'Architects Daughter';
+}
+
+.boxs{
+    border:2px solid black;
+    border-radius: 7px;
+    padding: 20px 10px;
+    margin: 25px 5px;
+    box-shadow: 0 4px 5px grey;
+}
+
+.header{
+    cursor: pointer;
+}
+
+.title{
+    font-size: 27px;
+}
+
+.boxs .content img{
+    float:right;
+    padding: 7px;
+}
+
+
+
+/* end of content */
+

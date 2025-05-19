@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+    <link rel="stylesheet" href="knowledgebase.css">
+    <link rel="stylesheet" href="headerandfooter.css">
+    <title>Knowledgebase</title>
+    <link rel="icon" href="help-desk01.png" type="image/x-icon">
+
+    <style>
+        .content{
+            padding-left: 15px;
+        }
+    </style>
+
+</head>
+<body>
+     <!--Staring of header-->
+     <header id="header1">
+        <div id="logo"><img src="weblogo.png" alt="website_logo"></div>
+        <div id="heading">HELP DESK</div>
+        <div id="profile-button" onClick="toggleMenu()">
+            <div class="icon">
+                <i class="fas fa-user"></i> <!-- User profile icon from Font Awesome -->
+            </div>
+        </div>
+
+        <div class="menu" id="submenu">
+            <a href="profilepage.php">User Profile</a>
+            <hr>
+            <a href="../login_and_register/logout.php">Logout</a>
+        </div>
+
+        <div id="navigation">
+            <a href="home.php">Home</a>
+            <a href="announcement.php">Announcement</a>
+            <a href="http://localhost/IWT-GITHUB/onlineHelpDesk/form.php">Contact Help Desk</a>
+            <div class="search_bar">
+                <input type="search" placeholder="Search...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </header>
+    <!--End of header-->
+
+    <!--Start of content-->
+
+    <div class="searchbar">
+        <input type="search" placeholder="Search"> <i class="fas fa-search"></i>
+    </div>
+
+    <div class="border">
+
+        <details class="boxs">
+            <summary class="header">
+                <span class="title"> Getting Started with the Help Desk</span>
+                <span class="dots"> <i class="fa-solid fa-arrow-right"></i></span>
+            </summary>
+                <div class="content">
+                    <p>Getting started with the university’s online help desk system is a straightforward process designed to assist you in resolving various issues quickly and efficiently. To begin, visit the help desk homepage and register for an account using your university email address. Once registered, log in using your credentials. The intuitive user interface allows you to navigate easily through different sections, including submitting a ticket, accessing the knowledge base, and viewing your ticket status. If you encounter any challenges, a step-by-step guide is available within the help desk to provide assistance. Familiarizing yourself with the system will enable you to maximize its benefits and ensure that your inquiries are addressed promptly.</p>
+                </div>
+        </details>
+
+        <details class="boxs">
+            <summary class="header">
+                <span class="title">How to Submit a Ticket</span>
+                <span class="dots"> <i class="fa-solid fa-arrow-right"></i></span>
+            </summary>
+            <div class="content">
+                <p>Submitting a support ticket through the online help desk is an essential step in addressing your concerns effectively. To begin, navigate to the ticket submission page, where you will find a user-friendly form designed for your convenience. Fill in the required fields, including a clear description of your issue, the category it falls under, and any relevant attachments. Ensure that you provide as much detail as possible to facilitate a swift resolution. After submitting your ticket, you will receive a confirmation email with a tracking number, allowing you to monitor the status of your request. The help desk team is committed to responding promptly and assisting you with any issues you may encounter.</p>
+            </div>
+        </details>
+
+        <details class="boxs">
+            <summary class="header">
+                <span class="title">Managing Your Tickets</span>
+                <span class="dots"> <i class="fa-solid fa-arrow-right"></i></span>
+            </summary>
+            <div class="content">
+                <img src="iwtpic.jpeg" height="70px" width="120px" alt="picture">
+                <p>Managing your submitted tickets is a crucial aspect of utilizing the online help desk effectively. Once you have submitted a ticket, you can log in to your account to view its status, add comments, or provide additional information. The ticket management system allows you to keep track of all your requests in one place, ensuring that you stay informed about their progress. If your issue has been resolved, you can also mark the ticket as closed. If you feel that further action is needed, you can escalate the ticket or communicate directly with the help desk staff through the comment feature. Our team is dedicated to ensuring your concerns are addressed promptly and thoroughly.</p>
+            </div>
+        </details>
+
+        <details class="boxs">
+            <summary class="header">
+                <span class="title">Technical Support Issues</span>
+                <span class="dots"> <i class="fa-solid fa-arrow-right"></i></span> <!-- Three vertical dots -->
+            </summary>
+            <div class="content">
+                <p>Navigating technical support issues can sometimes be challenging, but the help desk is here to assist you. This section of the knowledge base offers a variety of solutions to common technical problems faced by students, such as connectivity issues, software installation errors, and access problems with university systems. Each article provides step-by-step instructions to help you troubleshoot and resolve issues independently. If you cannot find a solution in this section, don’t hesitate to submit a support ticket detailing your problem. The help desk staff is trained to handle technical issues and will work diligently to provide you with the assistance you need to get back on track.</p>
+            </div>
+        </details>
+
+        <details class="boxs">
+            <summary class="header">
+                <span class="title"> Academic Support Queries </span>
+                <span class="dots"> <i class="fa-solid fa-arrow-right"></i></span>
+            </summary>
+            <div class="content">
+                <img src="iwtpic2.jpeg" height="70px" width="120px" alt="picture">
+                <p>If you have questions related to your academic experience, the Academic Support Queries section is designed to provide you with the necessary information and resources. This area covers various topics, including understanding academic policies, accessing course materials, and seeking clarification on grading procedures. Students can find guides on how to navigate the academic landscape effectively, ensuring that they can focus on their studies without unnecessary stress. For more specific inquiries or issues, feel free to submit a ticket through the help desk. Our dedicated staff is here to assist you and ensure you receive the academic support you need to succeed.</p>
+            </div>
+        </details>
+
+        <details class="boxs">
+            <summary class="header">
+                <span class="title">Administrative Help</span>
+                <span class="dots"> <i class="fa-solid fa-arrow-right"></i></span>
+            </summary>
+            <div class="content">
+                <p>The Administrative Help section of the knowledge base is dedicated to assisting students with various administrative processes and inquiries. Here, you will find information on topics such as financial aid applications, enrollment verification, and requesting official transcripts. This section aims to simplify the often-complex administrative procedures students face by providing clear and concise guidance. Additionally, resources are available to help you understand important deadlines and requirements associated with administrative tasks. If you require further assistance or have specific questions, please submit a ticket through the help desk, where our team will provide the necessary support.</p>
+            </div>
+        </details>
+
+        <details class="boxs">
+            <summary class="header">
+                <span class="title">Overview of University Services </span>
+                <span class="dots"> <i class="fa-solid fa-arrow-right"></i></span>
+            </summary>
+            <div class="content">
+                <img src="iwtpic3.png" height="70px" width="120px" alt="picture">
+                <p>Understanding the various services offered by the university is essential for a well-rounded student experience. This section provides a comprehensive overview of the services available to students, including counseling and mental health support, library resources, and career services. By exploring these resources, you can take advantage of the support systems designed to enhance your academic journey. Whether you need assistance with finding research materials in the library or guidance in securing internships, our university services are here to help you thrive. For additional inquiries or more detailed information, reach out to the appropriate service via the help desk.</p>
+            </div>
+        </details>
+
+    </div>
+
+    <!--JS file-->
+    <script src='knowledgetoggle.js'></script>
+
+    <!--End of content-->
+
+    <!--Starting of footer-->
+
+    <footer>
+        <div class="description">
+            Copyright @ 2024 Website,All rights
+        </div>
+        <div class="footer-link">
+            <a href="#">About Us </a>|
+            <a href="../Agent/contact_us.php">Contact Us</a>
+        </div>
+    </footer>
+
+
+    <!--End of footer-->
+
+<script>
+    let submenu = document.getElementById("submenu");
+
+    function toggleMenu()
+    {
+        submenu.classList.toggle("open-menu");
+    }
+</script>
+    
+</body>
+</html>

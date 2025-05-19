@@ -1,0 +1,82 @@
+/* Import header and footer styles */
+@import url('header.css');
+@import url('footer.css');
+
+/* Container */
+.main-container {
+    padding: 20px;
+    text-align: left; 
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.dashboard-content {
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+}
+
+.percentage-table {
+    margin-right: 40px; 
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+canvas {
+    max-width: 100%; 
+    height: auto;    
+}
+
+.details-container {
+    margin-top: 10px; 
+    font-size: 18px;
+    text-align: center; 
+}
+
+/* Styles for the Percentage Table */
+table {
+    width: 300px; 
+    border-collapse: collapse;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Button Styles */
+.btn-helpdesk {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.btn-helpdesk button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.btn-helpdesk button:hover {
+    background-color: #0056b3; 
+}

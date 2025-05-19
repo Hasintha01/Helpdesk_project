@@ -1,0 +1,146 @@
+
+
+/*Content of the body */
+
+.details{
+    border: 2px solid black;
+    border-radius: 7px;
+    margin: 10px 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 100vh;
+    margin-top: 50px;
+    margin-bottom:30px;
+}
+
+form fieldset {
+    width: 60%; /* Adjust to control the form width */
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid black;
+}
+
+form fieldset legend {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px; /* Adds space between rows */
+}
+
+.form-row div{
+    width:100%;
+    margin: 5px;
+}
+
+label {
+    margin-bottom: 2px;
+    display: block;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%; /* Full width for input fields */
+    padding: 10px;
+    border: 1.5px solid #101010;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+textarea{
+resize: none;
+}
+
+input::placeholder{
+    font-weight: bold;
+    opacity: 1;
+}
+
+
+.full-width {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom:10px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.formbutton {
+    width: 17%; /* Buttons take up half the available width */
+    padding: 10px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(61, 61, 253);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formbutton i {
+    margin-left: 5px; /* Adds space between icon and text */
+}
+
+input[type="reset"] {
+    background-color: black;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px; /* Padding */
+    border: 2px solid black; /* No border */
+    border-radius: 7px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.formbutton:hover {
+    transform: scale(1.05); /* Slightly increases size on hover */
+}
+
+.icon-button {
+    float: right;
+    text-align: right;
+    margin:5px 25px 10px 5px;
+    transition: all 0.3s ease;
+
+}
+
+.icon-button a{
+    text-decoration: none;
+    border : 2px solid black;
+    border-radius: 7px;
+    background-color: rgb(59, 59, 241);
+    color: white;
+    padding:5px 10px;
+}
+
+.icon-button:hover{
+    transform: scale(1.1);
+}
+
+.emptycontainer{
+    width:100%;
+    height:100px;
+    background-color: white;
+}
+
+/*End of Content*/
+

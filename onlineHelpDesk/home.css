@@ -1,0 +1,116 @@
+
+
+/* content of the body */
+
+
+.welcomebox{
+    border:2px solid black;
+    border-radius: 7px;
+    margin: 55px 50px 25px;
+    padding:10px;
+    text-align: center;
+    box-shadow: 4px 4px 4px 4px rgb(168, 148, 148);
+
+}
+
+.welcomebox p{
+   padding: 15px 10px ; 
+   font-size: 20px;
+}
+
+#welcomeheader{
+    font-size: 40px;
+}
+
+.myticketspage{
+    float: right;
+    text-align: right;
+    margin:10px 30px 15px 5px;
+    transition: all 0.3s ease;
+}
+
+.myticketspage a{
+    text-decoration: none;
+    border : 2px solid black;
+    border-radius: 7px;
+    background-color: rgb(59, 59, 241);
+    color: white;
+    padding:5px 10px;
+}
+
+.myticketspage:hover{
+    transform: scale(1.1);
+}
+
+.helpdesk{
+    width: 220px; /* Set a specific width */
+    margin:auto;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.helpdesk a{
+    padding: 7px 20px;
+    font-size: 20px;
+    font-family:  'Architects Daughter';
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.helpdesk:hover{
+    transform: scale(1.1);
+}
+
+.helpdesk a:hover {
+    background-color: #1111d5;
+}
+
+.details{
+    display: flex;
+    margin: 30px 25px;   
+    box-shadow: 4px 4px 4px 4px rgb(168, 148, 148);
+
+}
+
+.details a{
+    text-decoration: none;
+    color: black;
+}
+
+.details h2{
+    text-decoration: underline;
+}
+
+
+.details div{
+    border: 2px solid black;
+    border-radius: 7px;
+    margin:20px 14px;
+    padding: 7px;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+}
+
+.details div:hover{
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8); 
+}
+
+.details div:hover::after{
+    transition: transform 0.4s ease;
+}
+
+.feedback{
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+
+
+/* End of the body container */
+
+

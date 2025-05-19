@@ -1,0 +1,98 @@
+
+
+/*staring of content*/
+
+.basecontainer{
+    display:flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 700px;
+    margin: 20px auto;
+    border-radius: 7px;
+    box-shadow: 4px 4px 4px 4px rgb(168, 148, 148);
+
+}
+
+.detailcontainer{
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: white;
+    width: 60%;
+    height: 670px;
+    margin:15px;
+    overflow-y: scroll;
+}
+
+.detailcontainer::-webkit-scrollbar {
+    width: 10px;
+}
+
+.detailcontainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 7px;
+}
+
+.detailcontainer::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.detailcontainer::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.bothcontainer{
+    width: 36%;
+    height:670px;
+    margin:15px;
+    display: block;
+    box-shadow: 4px 4px 4px 4px rgb(168, 148, 148);
+
+}
+
+.mapcontainer{
+    width:90%;
+    height: 310px;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding:5px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.mapcontainer img{
+    border-radius: 7px;
+}
+
+.noticecontainer{
+    width:90%;
+    height: 310px;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding:5px;
+    margin: 10px auto;
+    overflow:hidden;
+}
+
+.noticecontainer h4{
+    text-align: center;
+}
+
+.smiller{
+    border: 1px solid black;
+    border-radius: 7px;
+    margin:7px;
+}
+
+.smiller h2{
+    text-decoration: underline;
+    padding-left: 5px;
+}
+
+.smiller p{
+    padding-left: 30px;
+}
+
+
+/*End of the content*/
+

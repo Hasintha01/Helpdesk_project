@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+    <link rel="stylesheet" href="shuttle.css">
+    <link rel="stylesheet" href="headerandfooter.css">
+    <title>Shuttle Services</title>
+    <link rel="icon" href="help-desk01.png" type="image/x-icon">
+</head>
+<body>
+     <!--Staring of header-->
+     <header id="header1">
+        <div id="logo"><img src="weblogo.png" alt="website_logo"></div>
+        <div id="heading">HELP DESK</div>
+        <div id="profile-button" onClick="toggleMenu()">
+            <div class="icon">
+                <i class="fas fa-user"></i> <!-- User profile icon from Font Awesome -->
+            </div>
+        </div>
+
+        <div class="menu" id="submenu">
+            <a href="profilepage.php">User Profile</a>
+            <hr>
+            <a href="../login_and_register/logout.php">Logout</a>
+        </div>
+
+        <div id="navigation">
+            <a href="home.php">Home</a>
+            <a href="announcement.php">Announcement</a>
+            <a href="http://localhost/IWT-GITHUB/onlineHelpDesk/form.php">Contact Help Desk</a>
+            <div class="search_bar">
+                <input type="search" placeholder="Search...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </header>
+    <!--End of header-->
+
+    <!--content of the body-->
+
+    <div class="basecontainer">
+
+        <div class="detailcontainer">
+
+            <div id="detail01" class="smiller">
+                <h2>Malabe - Panadura</h2>
+                <p>The shuttle departs from Malabe Campus at 8:00 AM and arrives in Panadura at approximately 8:45 AM. The route takes the A1 Highway, making stops at Talawathugoda, Pannipitiya, and Hokandara along the way. </p>
+            </div>
+
+            <div id="detail02" class="smiller">
+                <h2> Malabe - Negombo</h2>
+                <p>Shuttle service from Malabe leaves at 9:00 AM and reaches Negombo by 10:00 AM. This route utilizes the A3 Road, stopping at Maharagama, Kaduwela, and Kelaniya before arriving at the destination. </p>
+            </div>
+
+            <div id="detail03" class="smiller">
+                <h2>Malabe - Colombo</h2>
+                <p>Departing from Malabe Campus at 7:30 AM, the shuttle arrives in Colombo by 8:15 AM. The route follows Nawala Road with stops at Nugegoda, Maharagama, and Borella. </p>
+            </div>
+
+            <div id="detail04" class="smiller">
+                <h2>Malabe - Kottawa</h2>
+                <p>Shuttles depart from Malabe at 7:45 AM and reach Kottawa at 8:15 AM. The route takes Pannipitiya Road, with stops at Talawathugoda and Pannipitiya.</p>
+            </div>
+
+            <div id="detail05" class="smiller">
+                <h2>Malabe - Wattala</h2>
+                <p>Departing from Malabe at 9:00 AM, the shuttle arrives in Wattala by 9:30 AM. The shuttle travels via A1 Highway, with stops at Peliyagoda and Kelaniya. </p>
+            </div>
+
+            <div id="detail06" class="smiller">
+                <h2>Malabe - Wellawatte</h2>
+                <p>The shuttle leaves Malabe at 8:15 AM and reaches Wellawatte by 8:45 AM. The route follows Galle Road, making stops at Mount Lavinia and Ratmalana.</p>
+            </div>
+
+        </div>
+
+        <div class="bothcontainer">
+            <div class="mapcontainer">
+               <caption> <b>Map </b></caption><br>
+                <img src="map.png" width="99%" height="280px" alt="map">
+
+            </div>
+            <div class="noticecontainer">
+                <h4>Notices :-</h4>
+                <ul>
+                    <li>Advance Payment Required: Passengers must pay the shuttle fee before boarding. Ensure you have the exact amount ready for a smooth experience.</li>
+                    <li>Card Updates: Please update your shuttle service card with any changes to your personal information or payment method. This ensures a hassle-free ride. </li>
+                    <li>QR Code for Boarding: Each passenger must present a valid QR code to board the shuttle. QR codes will be provided upon successful payment.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!--end of the content-->
+
+    <!--Starting of footer-->
+
+    
+    <footer>
+        <div class="description">
+            Copyright @ 2024 Website,All rights
+        </div>
+        <div class="footer-link">
+            <a href="#">About Us </a>|
+            <a href="../Agent/contact_us.php">Contact Us</a>
+        </div>
+    </footer>
+
+<!--End of footer-->
+
+<script>
+    let submenu = document.getElementById("submenu");
+
+    function toggleMenu()
+    {
+        submenu.classList.toggle("open-menu");
+    }
+</script>
+
+</body>
+</html>
