@@ -145,3 +145,35 @@ This project is licensed under the MIT License.
 1. Clone the repository:
    ```bash
    git clone https://github.com/Hasintha01/Helpdesk_project.git
+
+Move the project folder to your Apache server’s root directory (for example, the htdocs folder inside your XAMPP installation).
+
+Start Apache and MySQL servers (if using XAMPP, open the XAMPP control panel and start them).
+
+Import the provided .sql file into phpMyAdmin to set up the database.
+
+Configure your database connection in the PHP config file (often named config.php or similar) by entering your database username, password, and database name.
+
+Open your web browser and navigate to:
+
+arduino
+Copy
+Edit
+http://localhost/Helpdesk_project/
+Usage
+Register as a new user or log in with existing credentials.
+
+Help desk agents can view, escalate, and manage tickets.
+
+Admins can oversee system activity and user roles.
+
+All users can interact through the interface to submit or track issues.
+
+Author
+Hasintha Pasindu
+Help Desk Agent Module Developer
+Email: hasinthapasindu@gmail.com
+
+License
+This project is licensed under the MIT License.
+
